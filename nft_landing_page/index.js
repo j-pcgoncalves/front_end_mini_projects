@@ -4,3 +4,9 @@ const navMenu = document.querySelector("#navMenu");
 toggler.addEventListener("click", () => {
     navMenu.classList.toggle("active");
 });
+
+const scroll = document.getElementById("scroll");
+
+scroll.addEventListener("click", () => {
+    document.querySelector(".get-started").scrollIntoView({ behavior: "smooth" });
+});
